@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700');
+
+* {
+    font-family: "Poppins";
+}
+
+input {
+    font-size: 2em;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 1000px;
+    border-style: solid;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+table {
+    font-size: 2.5em;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px #ddd; /* hack to draw the table border */
+    overflow: hidden;
+}
+
+td {
+    padding: 20px;
+    border: none;
+}
+
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}

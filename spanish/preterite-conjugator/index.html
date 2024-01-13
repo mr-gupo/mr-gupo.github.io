@@ -4,9 +4,37 @@
     <head>
         <title>MR GUPO - Preterite conjugator</title>
         <link rel="icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/common-style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <p>This text is only temporary...</p>
+        <div class="centered">
+            <input placeholder="Enter verb" type="text" autocomplete="off" autofocus>
+
+            <p id="table-header">
+                <span id="verb-title"></span>
+                <span style="font-size: 1.25em"> - 
+                    <a id="spanishdict-link" target="_blank">SpanishDictionary</a>
+                </span>
+            </p>
+
+            <table>
+                <tr>
+                    <td id="yo">estuve</td>
+                    <td id="nosotros">estuvimos</td>
+                </tr>
+                <tr>
+                    <td id="eres">estuviste</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="el">estuvo</td>
+                    <td id="son">estuvieron</td>
+                </tr>
+            </table>
+        </div>
     </body>
+
+    <script src="script.js"></script>
 </html>

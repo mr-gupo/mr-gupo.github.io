@@ -1,0 +1,13 @@
+#table-header {
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+#verb-title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#spanishdict-link {
+    font-size: 1.25em;
+}

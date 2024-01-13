@@ -4,11 +4,6 @@ a {
 
 #listings {
     padding: 20px 0px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
 }
 
 .listing {
@@ -17,7 +12,6 @@ a {
     border-radius: 1000px;
     border-style: solid;
     border-width: 3px;
-    border-color: #ccc;
     background-color: #f7f7f7;
     padding: 30px;
     min-width: 15em;
