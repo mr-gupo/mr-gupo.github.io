@@ -120,11 +120,12 @@ function conjugate(verb) {
         verbStem + endings.el,
         verbStem + endings.nosotros,
         verbStem + endings.son
-    )
+    );
 
-    if (verbEnding in yoEndingChanges) {
+    const lastThree = verb.slice(-3);
+    if (lastThree in yoEndingChanges) {
         conjugations.yo = verbStem.slice(0, -1);
-        conjugations.yo += yoEndingChanges[verb.slice(0, -3)]
+        conjugations.yo += yoEndingChanges[lastThree];
     }
 
     return conjugations;
