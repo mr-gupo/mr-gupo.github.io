@@ -5,11 +5,14 @@
 }
 
 input {
+    width: 15em;
+    text-align: center;
     font-size: 2em;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 1000px;
     border-style: solid;
+    border-color: #ddd;
 }
 
 input::placeholder {
@@ -38,6 +41,9 @@ tr:nth-child(odd) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.vertical-flow {
     display: flex;
     justify-items: center;
     align-items: center;
