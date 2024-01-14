@@ -137,7 +137,7 @@ function setVisibility(visibility) {
 }
 
 input.addEventListener("input", () => {
-    const verb = input.value.trim();
+    const verb = input.value.trim().toLowerCase();
 
     if (validate(verb)) {
         const conjugation = conjugate(verb);
