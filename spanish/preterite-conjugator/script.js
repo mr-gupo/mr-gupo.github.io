@@ -32,14 +32,34 @@ const manualConjugations = {
 manualConjugations["ir"] = manualConjugations["ser"];
 
 const stemReplacements = {
+    "andar": "anduv",
+    "venir": "vin",
     "estar": "estuv",
-    "tener": "tuv",
     "poder": "pud",
     "poner": "pus",
     "saber": "sup",
+    "tener": "tuv",
     "venir": "vin",
     "querer": "quis",
-    "traer": "traj"
+    "decir": "dij",
+    "traer": "traj",
+    "conducir": "conduj",
+    "producir": "produj",
+    "traducir": "traduj",
+    "detener": "detuv",
+    "retener": "retuv",
+    "contener": "contuv",
+    "convenir": "convin",
+    "prevenir": "previn",
+    "componer": "compus",
+    "descomponer": "descompus",
+    "proponer": "propus",
+    "disponer": "dispus",
+    "predecir": "predij",
+    "contradecir": "contradij",
+    "deshacer": "deshic",
+    "rehacer": "rehic",
+    "haber": "hub"
 };
 
 const ARVerbEndings = new Conjugation("é", "aste", "ó", "amos", "aron");
