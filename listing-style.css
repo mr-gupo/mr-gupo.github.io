@@ -7,27 +7,5 @@ a {
 }
 
 .listing {
-    font-family: sans-serif;
-    font-size: 2.5em;
-    border-radius: 1000px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #ddd;
-    background-color: #f7f7f7;
-    padding: 30px;
     min-width: 15em;
-    cursor: pointer;
-    transition-duration: 100ms;
-    margin: 10px 0px;
-}
-
-.listing:hover {
-    background-color: #fafafa;
-    transform: translate(0, -2px);
-    box-shadow: 0 2px 2px #eee;
-}
-
-.listing:active {
-    background-color: #eee;
-    transform: translate(0, 2px);
 }
