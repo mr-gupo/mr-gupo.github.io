@@ -3,3 +3,7 @@
     margin: 0 !important;
     overflow: hidden;
 }
+
+body {
+    background-color: black;
+}

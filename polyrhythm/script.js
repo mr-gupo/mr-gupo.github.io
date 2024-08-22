@@ -112,7 +112,7 @@ class Ring {
 const rings = Array.from({length: ringCount}, (_, i) => new Ring(i));
 
 function beat() {
-    if (elapsedTime >= 15.9 && elapsedTime <= 79.6 || elapsedTime >= 111.9 && elapsedTime <= 416.1) {
+    if (elapsedTime >= 15.9 && elapsedTime <= 80 || elapsedTime >= 111.9 && elapsedTime <= 416.1) {
         ringBrightness = 0.1;
         glowAlpha = 0.1;
     }
@@ -157,12 +157,6 @@ function animate(currentTime) {
     requestAnimationFrame(animate);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    song.play();
-    lastTime = performance.now();
-    requestAnimationFrame(animate);
-})
-
 const accurateTimer = (fn, time = 1000) => {
     let nextAt, timeout;
     nextAt = new Date().getTime() + time;
@@ -179,4 +173,13 @@ const accurateTimer = (fn, time = 1000) => {
     return { cancel };
 };
 
-accurateTimer(beat, 500);
+function initializeAnimation() {
+    lastTime = performance.now();
+    requestAnimationFrame(animate);
+    accurateTimer(beat, 500);
+    song.play();
+}
+
+song.addEventListener("canplaythrough", () => {
+    setTimeout(initializeAnimation, 100)
+}, {once: true})
